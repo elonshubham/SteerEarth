@@ -20,18 +20,18 @@ import gov.nasa.worldwind.layer.LayerFactory;
 import gov.nasa.worldwind.ogc.WmsLayer;
 import gov.nasa.worldwind.ogc.WmsLayerConfig;
 
-public class CloudWaterContent extends AppCompatActivity {
+public class Rainfall extends AppCompatActivity {
     WorldWindow wwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.worldexplore);
-        this.setTitle("Cloud Water Content");
+        this.setTitle("Aerosol Optical Thickness");
 
 
         // Create a WorldWindow (a GLSurfaceView)...
-        wwd = new WorldWindow(CloudWaterContent.this);
+        wwd = new WorldWindow(Rainfall.this);
 // ... and add some map layers
         wwd.getLayers().addLayer(new BackgroundLayer());
         wwd.getLayers().addLayer(new BlueMarbleLayer());
@@ -55,7 +55,7 @@ public class CloudWaterContent extends AppCompatActivity {
         // surface temperature layer from NASA's Near Earth Observations WMS.
         layerFactory.createFromWms(
                 "https://neo.sci.gsfc.nasa.gov/wms/wms", // WMS server URL
-                "MODAL2_M_CLD_WP",                         // WMS layer name
+                "TRMM_3B43M",                         // WMS layer name
                 new LayerFactory.Callback() {
                     @Override
                     public void creationSucceeded(LayerFactory factory, Layer layer) {
