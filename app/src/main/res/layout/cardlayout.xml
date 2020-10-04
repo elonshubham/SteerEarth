@@ -11,7 +11,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-        android:id="@+id/card_view"
+        android:id="@+id/firecard"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp"
@@ -84,10 +84,7 @@
         </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/card_view2"
+        android:id="@+id/tempcard"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_margin="10dp"
@@ -105,7 +102,7 @@
                 android:id="@+id/colorimage2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="#FF6E40"
+                android:background="#FF4081"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintStart_toStartOf="parent"
@@ -127,13 +124,13 @@
 
             <TextView
                 android:id="@+id/headtext2"
-                android:layout_width="210dp"
+                android:layout_width="332dp"
                 android:layout_height="46dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="108dp"
                 android:fontFamily="@font/snapchatfont"
                 android:gravity="left"
-                android:text="Active Fires"
+                android:text="Land Surface Temp"
                 android:textColor="#F6F2F2"
                 android:textSize="30sp"
                 card_view:layout_constraintStart_toStartOf="parent"
@@ -160,7 +157,7 @@
     </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view3"
+            android:id="@+id/watercard"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_margin="10dp"
@@ -191,7 +188,7 @@
                     android:id="@+id/colorimage3"
                     android:layout_width="391dp"
                     android:layout_height="201dp"
-                    android:background="#FF6E40"
+                    android:background="#40C4FF"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="1.0"
@@ -201,13 +198,13 @@
 
                 <TextView
                     android:id="@+id/headtext3"
-                    android:layout_width="210dp"
-                    android:layout_height="46dp"
+                    android:layout_width="332dp"
+                    android:layout_height="36dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Cloud Water Content"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"
@@ -263,7 +260,7 @@
                     android:id="@+id/colorimage4"
                     android:layout_width="391dp"
                     android:layout_height="201dp"
-                    android:background="#FF6E40"
+                    android:background="#7C4DFF"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="1.0"
@@ -273,13 +270,13 @@
 
                 <TextView
                     android:id="@+id/headtext4"
-                    android:layout_width="210dp"
+                    android:layout_width="332dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Carbon Monoxide"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"
@@ -335,7 +332,7 @@
                     android:id="@+id/colorimage5"
                     android:layout_width="391dp"
                     android:layout_height="201dp"
-                    android:background="#FF6E40"
+                    android:background="#69F0AE"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="1.0"
@@ -345,13 +342,13 @@
 
                 <TextView
                     android:id="@+id/headtext5"
-                    android:layout_width="210dp"
+                    android:layout_width="332dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Leaf Area Index"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"
@@ -407,7 +404,7 @@
                     android:id="@+id/colorimage6"
                     android:layout_width="391dp"
                     android:layout_height="201dp"
-                    android:background="#FF6E40"
+                    android:background="#FF5252"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="1.0"
@@ -417,13 +414,13 @@
 
                 <TextView
                     android:id="@+id/headtext6"
-                    android:layout_width="210dp"
+                    android:layout_width="332dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Net Radiation"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"
@@ -496,7 +493,7 @@
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Ozone"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"
@@ -563,13 +560,13 @@
 
                 <TextView
                     android:id="@+id/headtext8"
-                    android:layout_width="210dp"
+                    android:layout_width="332dp"
                     android:layout_height="46dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="@font/snapchatfont"
                     android:gravity="left"
-                    android:text="Active Fires"
+                    android:text="Permafrost"
                     android:textColor="#F6F2F2"
                     android:textSize="30sp"
                     card_view:layout_constraintStart_toStartOf="parent"

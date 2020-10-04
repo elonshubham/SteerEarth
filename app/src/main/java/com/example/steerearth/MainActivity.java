@@ -2,10 +2,13 @@ package com.example.steerearth;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.FrameLayout;
 
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -22,16 +25,31 @@ import gov.nasa.worldwind.ogc.WmsLayerConfig;
 
 public class MainActivity extends AppCompatActivity {
     WorldWindow wwd;
+    CardView mgeneralcard;
+    CardView mcustomcard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        CollapsingToolbarLayout mcollapsingtoolbarlayout=findViewById(R.id.collapsing_toolbar);
-        mcollapsingtoolbarlayout.setExpandedTitleColor(Color.TRANSPARENT);
-        mcollapsingtoolbarlayout.setTitle("STEER EARTH");
-        mcollapsingtoolbarlayout.setCollapsedTitleTextColor(Color.WHITE);
+        mgeneralcard=findViewById(R.id.generalcard);
+        mcustomcard=findViewById(R.id.customcard);
+
+        mgeneralcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent announcementclickintent =new Intent(MainActivity.this,TopicChooser.class);
+                startActivity(announcementclickintent);
+            }
+        });
+
+
+
+        //CollapsingToolbarLayout mcollapsingtoolbarlayout=findViewById(R.id.collapsing_toolbar);
+        //mcollapsingtoolbarlayout.setExpandedTitleColor(Color.TRANSPARENT);
+        //mcollapsingtoolbarlayout.setTitle("STEER EARTH");
+        //mcollapsingtoolbarlayout.setCollapsedTitleTextColor(Color.WHITE);
 
         // Create a WorldWindow (a GLSurfaceView)...
         /*wwd = new WorldWindow(MainActivity.this);
@@ -76,17 +94,5 @@ public class MainActivity extends AppCompatActivity {
         );*/
     }
 
-    public void onResume() {
-        super.onResume();
-        wwd.onResume(); // resumes a paused rendering thread
-    }
 
-    /**
-     * Pauses the WorldWindow's rendering thread
-     */
-    @Override
-    public void onPause() {
-        super.onPause();
-        wwd.onPause(); // pauses the rendering thread
-    }
 }

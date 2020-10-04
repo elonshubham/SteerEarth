@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CloudWaterContent"
+        <activity android:name=".MainActivity"
             android:theme="@style/generaltheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".TopicChooser"
+            android:theme="@style/generaltheme"></activity>
+        <activity android:name=".ActiveFires"
+            android:theme="@style/generaltheme"></activity>
+        <activity android:name=".CloudWaterContent"
+            android:theme="@style/generaltheme"></activity>
+        <activity android:name=".LandSurfaceTemperature"
+            android:theme="@style/generaltheme"></activity>
     </application>
 
 </manifest>

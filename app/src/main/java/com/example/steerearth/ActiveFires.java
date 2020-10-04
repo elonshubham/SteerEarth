@@ -27,6 +27,7 @@ public class ActiveFires extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.worldexplore);
+        this.setTitle("Active Fires");
 
 
         // Create a WorldWindow (a GLSurfaceView)...
